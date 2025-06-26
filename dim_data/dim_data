@@ -1,0 +1,17 @@
+dim_data = CALENDAR(MIN('exec'[Data da Ocorrência:]), MAX(exec[Data da Ocorrência:]))
+
+ano = YEAR(dim_data[Data])
+
+ano/mes = FORMAT(dim_data[Data], "yyyy/mm")
+
+ano/mes/dia = FORMAT(dim_data[Data], "yyyy/mm/dd")
+
+dia = DAY(dim_data[Data])
+
+dia semana = FORMAT(dim_data[Data], "dddd")
+
+mes = MONTH(dim_data[Data])
+
+semana ano = FORMAT(dim_data[Data], "yyyy") & "/" & FORMAT(WEEKNUM(dim_data[Data]), "00")
+
+trimestre = FORMAT(dim_data[Data], "yyyy/"&"Q"&"T")
