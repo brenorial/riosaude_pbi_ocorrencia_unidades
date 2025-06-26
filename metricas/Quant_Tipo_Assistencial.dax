@@ -1,0 +1,5 @@
+Quant Tipo Assistencial = 
+CALCULATE(
+    COUNTROWS(exec),
+    exec[Selecione o Tipo de Ocorrência:] = "Assistencial"
+)
