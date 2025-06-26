@@ -1,0 +1,8 @@
+site_name: Dashboard de Ocorrências no Power BI
+theme:
+  name: material
+
+nav:
+  - Início: index.md
+  - Converter Planilha Google em JSON: sheets-to-json.md
+  - Métricas em DAX: metricas.md
