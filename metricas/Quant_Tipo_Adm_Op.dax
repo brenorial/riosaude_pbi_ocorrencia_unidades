@@ -1,0 +1,5 @@
+Quant Tipo Administrativo/Operacional = 
+CALCULATE(
+    COUNTROWS(exec),
+    exec[Selecione o Tipo de Ocorrência:] = "Administrativo/Operacional"
+)
